@@ -1,15 +1,19 @@
 void main() {
 
-  int idade = 25;
+  var idade = 25;
   double altura = 1.55;
   bool geek = true;
-  String nome = 'Eter Costa';
-  String apelido = 'theu';
-  String frase = 'Eu sou $apelido \n'
-      'mas meu nome completo é: $nome, \n'
-      'eu me considero geek? $geek. \n'
-      'Eu tenho $altura metros de altura e \n'
-      '$idade anos de idade';
+  const String nome = 'Eter Costa';
+  final String apelido ;
+  apelido = 'theu';
+
+  List<dynamic> ester = [25, 1.55, true, 'eter costa', 'ester'];
+
+  String frase = 'Eu sou ${ester[4]} \n'
+      'mas meu nome completo é: ${ester[3]}, \n'
+      'eu me considero geek? ${ester[2]}. \n'
+      'Eu tenho ${ester[1]} metros de altura e \n'
+      '${ester[0]} anos de idade';
 
   print(frase);
 
@@ -18,6 +22,5 @@ void main() {
   print(listanomes.length);
   print(listanomes[0]);
 
-  List<dynamic> ester = [25, 1.55, true, 'eter costa', 'ester'];
 
 }
