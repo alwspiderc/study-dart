@@ -1,7 +1,7 @@
 void main() {
 
   int idade = 25;
-  double altura = 1.86;
+  double altura = 1.55;
   bool geek = true;
   String nome = 'Eter Costa';
   String apelido = 'theu';
@@ -17,4 +17,7 @@ void main() {
   print(listanomes);
   print(listanomes.length);
   print(listanomes[0]);
+
+  List<dynamic> ester = [25, 1.55, true, 'eter costa', 'ester'];
+
 }
