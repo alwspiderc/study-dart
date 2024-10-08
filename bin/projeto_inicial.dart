@@ -12,4 +12,9 @@ void main() {
       '$idade anos de idade';
 
   print(frase);
+
+  List<String> listanomes = ['Ricarth', 'Natália', 'Alex', 'Ândriu', 'André'];
+  print(listanomes);
+  print(listanomes.length);
+  print(listanomes[0]);
 }
